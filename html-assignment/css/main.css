@@ -6,3 +6,7 @@ body {
 header, footer {
     background-color: pink;
 }
+
+.site-title {
+    color: crimson;
+}
