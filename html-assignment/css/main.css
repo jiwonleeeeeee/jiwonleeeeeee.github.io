@@ -25,5 +25,14 @@ article ul li:nth-child(odd) {
 
 nav ul li {
     list-style: none;
-    
+}
+
+a:link {
+    text-decoration: none;
+    background: crimson;
+    border: 2px solid blue;
+}
+
+a:hover {
+    background-color: yellow;
 }
