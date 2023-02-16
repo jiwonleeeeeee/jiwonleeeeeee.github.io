@@ -18,3 +18,12 @@ header, footer {
 ul {
     list-style: square;
 }
+
+article ul li:nth-child(odd) {
+    background: hotpink;
+}
+
+nav ul li {
+    list-style: none;
+    
+}
