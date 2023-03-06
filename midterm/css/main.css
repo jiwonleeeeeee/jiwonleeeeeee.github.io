@@ -1,16 +1,73 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #AAD4CE;
+}
+
+.wrapper {
+    background-color: #D4E9E7;
+    width: 1023px;
+    margin: 0 auto;
 }
 
 nav ul li {
     list-style: none;
     display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 a:link {
     text-decoration: none;
+    color: black;
+}
+
+.life {
+    margin-left: 6px;
+    margin-right: 20px;
+}
+
+.left {
+    float: left;
+    width: 180px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.fact {
+    margin: 6px;
+}
+
+.contact {
+    margin: 6px;
 }
 
 .box {
-    border: solid;
+    border: 1px solid;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.button {
+    background-color: #D4E9E7;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.copy {
+    text-align: right;
+    padding: 20px;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.message-box {
+    width: 100%;
+    height: 80px;
+    margin-top: 5px;
 }
