@@ -12,8 +12,13 @@ body {
 nav ul li {
     list-style: none;
     display: inline-block;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 125px;
+    text-align: center;
+    border-right: 1px solid;
+}
+
+li:last-child {
+    border-right: none;
 }
 
 a:link {
