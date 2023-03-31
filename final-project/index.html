@@ -11,27 +11,26 @@
 <body>
     <!--top-->
     <div class="wapper">
-        <nav class="topnav"> <!-- nav section: requires flex on a parent -->
+        <nav class="topnav">
             <img src="images/images/logo.png" alt="threestars">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <!-- change background color -->
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div>
                 <form>
                     <input type="text" placeholder="Search">
                     <button type="button" class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                 <!-- change the style of the button -->
+                 <!--change the style of the button-->
             </div>
         </nav>
     </div>
     <!--mainbanner-->
-    <div class="wrapper">
+    <div id="home" class="wrapper">
         <div class="container">
             <img src="images/images/main-banner.jpg" alt="image of an office">
             <!-- image should be in background -->
@@ -43,7 +42,7 @@
         </div>
     </div>
     <!--about-->
-    <div class="wrapper">
+    <div id="about" class="wrapper">
         <div class="about">
             <img src="images/images/about-us.jpg" alt="table tennis">
         <h2>About Us</h2>
@@ -53,7 +52,7 @@
     </div>
     <!--services-->
     <div class="wrapper">
-        <h2>Our Services</h2>
+        <h2  id="services">Our Services</h2>
             <div class="digital">
                 <img src="images/images/digital.jpg" alt="laptop and smartphone">
                 <h3>Digital Transformation</h3>
@@ -96,7 +95,7 @@
     </div>
     <!--team-->
     <div class="wrapper">
-        <h2>Our Team</h2>
+        <h2 id="team">Our Team</h2>
         <div class="team">
             <img src="images/images/john.jpg" alt="john's photo">
             <h3>John Doe</h3>
@@ -112,8 +111,9 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati cum corrupti, incidunt necessitatibus nulla odio accusantium ipsam suscipit. Facilis officia iure sed ut natus. Accusantium illum deleniti rerum voluptates velit.</p>
         </div>
     </div>
+    <!--contact-->
     <div class="wrapper">
-        <h2>Contact Us</h2>
+        <h2 id="contact">Contact Us</h2>
         <h3>Send us a message</h3>
         <form>
             <label for="fname">Full name</label><br>

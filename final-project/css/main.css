@@ -1,0 +1,20 @@
+.wrapper {
+    margin: auto;
+}
+
+.topnav {
+    background-color: black;
+}
+
+.section {
+    background-color: #C78B07;
+}
+
+ul li {
+    list-style: none;
+    color: #C78B07;
+}
+
+a:link {
+    text-decoration: none;
+}
