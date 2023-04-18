@@ -11,36 +11,41 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="images/logo.png" alt="threestars">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>   
-            </nav>
-            <form>
-                <input type="text" placeholder="Search">
-                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><img src="images/logo.png" alt="threestars"></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>   
+                </nav>
+                <form class="search">
+                    <input type="search" placeholder="Search">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </header>
-        <div id="home" class="home">
+        <div id="home" class="container">
             <div class="wrapper">
                 <img src="images/main-banner.jpg" alt="office image">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque nulla dolorum placeat beatae, architecto id in. Non voluptate quibusdam pariatur maiores, ab voluptatibus animi et possimus fugiat. Laudantium, ducimus!</p>
-                <button class="yellowbutton">Connect with us <i class="fa-solid fa-play"></i></button>
+                <div class="welcome">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel doloremque nulla dolorum placeat beatae, architecto id in. Non voluptate quibusdam pariatur maiores, ab voluptatibus animi et possimus fugiat. Laudantium, ducimus!</p>
+                    <button class="yellowbutton">Connect with us <i class="fa-solid fa-play"></i></button>    
+                </div>
             </div>
         </div>
         <div id="about">
             <div class="wrapper">
-                <img src="images/about-us.jpg" alt="teble tennis image">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero autem est cupiditate praesentium ex architecto odit, perspiciatis aperiam illo minus tempora, omnis excepturi nesciunt deserunt sapiente. Quaerat soluta nesciunt excepturi!</p>
-                <p>Dolores ratione, excepturi aliquid quis sint cupiditate. Repudiandae at beatae omnis explicabo iusto aliquid a expedita nihil deserunt eaque, consequatur vero itaque recusandae, dicta ratione, aperiam possimus culpa doloremque earum.</p>
-    
+                <div class="about">
+                    <img src="images/about-us.jpg" alt="teble tennis image">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero autem est cupiditate praesentium ex architecto odit, perspiciatis aperiam illo minus tempora, omnis excepturi nesciunt deserunt sapiente. Quaerat soluta nesciunt excepturi!</p>
+                    <p>Dolores ratione, excepturi aliquid quis sint cupiditate. Repudiandae at beatae omnis explicabo iusto aliquid a expedita nihil deserunt eaque, consequatur vero itaque recusandae, dicta ratione, aperiam possimus culpa doloremque earum.</p>    
+                </div>    
             </div>
         </div>
         <div id="services">
@@ -85,9 +90,11 @@
         </div>
         <div class="vision">
             <img src="images/vision.jpg" alt="boats">
-            <h3>Our Vision</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt rerum quos aliquid labore odio fuga sit accusantium iure itaque impedit perferendis officiis porro, cupiditate, sapiente consectetur voluptas non vitae odit!</p>
-            <button class="buttonblue">Learn More <i class="fa-solid fa-play"></i></button>
+            <div class="visiontext">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt rerum quos aliquid labore odio fuga sit accusantium iure itaque impedit perferendis officiis porro, cupiditate, sapiente consectetur voluptas non vitae odit!</p>
+                <button class="buttonblue">Learn More <i class="fa-solid fa-play"></i></button>
+            </div>
         </div>
         <div id="team">
             <div class="wrapper">
