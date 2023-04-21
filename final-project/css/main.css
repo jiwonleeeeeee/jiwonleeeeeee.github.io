@@ -140,13 +140,9 @@ section p {
     font-size: large;
 }
 
-.grid-item {
+.item1, .item2, .item3, .item4, .item5 {
     background: #ffe6ac;
     margin-bottom: 10px;
-}
-
-.grid-item p {
-    margin-left: 10px;
 }
 
 .button {
@@ -160,6 +156,7 @@ section p {
     padding: 5px;
 }
 
+/* style for a section with a background image */
 .vision {
     background-image: url('../images/vision.jpg');
     background-position: center;
@@ -174,6 +171,7 @@ section p {
 
 .visiontext {
     padding-top: 3%;
+    margin: 0 10%;
 }
 
 .visiontext h3 {
@@ -184,8 +182,9 @@ section p {
 .buttonblue {
     border: 1px solid #c78c06;
     color: white;
-    background: linear-gradient(to right, black, darkblue);
+    background: linear-gradient(to right, #0F1B2E, #16263E);
     padding: 20px;
+    margin: 0 10%;
 }
 
 .team {
@@ -241,6 +240,10 @@ form input[type="submit"] {
     padding: 5px;
 }
 
+
+/* style a table by collapsing borders, setting the width,
+adding a border to each cell, and applying background color to the table header.
+style the caption also.*/
 table {
     border-collapse: collapse;
     width: 100%;
@@ -279,18 +282,48 @@ footer {
 /* styles for screens 760px wide and above (desktop ver.) */
 @media screen and (min-width: 760px) {
 
-    ul li {
-        display: inline;
+
+    /* Style for a navigation bar */
+    ul {
+        display: flex;
         align-items: center;
-        margin-bottom: 5%;
-        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li {
+        margin: 0 10px;
+        padding: 2%;
+        width: 100px;
     }
 
+    /* Adjust padding for second list item to make space for logo */
+    ul li:nth-child(2) {
+        padding-left: 2.5%;
+    }
+      
     .nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        padding: 10px;
+        background-color: #222;
+        margin-left: 5%;
+    }
+      
+    .search {
+        display: flex;
+        align-items: center;
+        margin-left: 3%;
+    }
+      
+    .search input[type="search"] {
+        padding: 5px;
+        border: none;
+    }
+      
+    .logo {
+        max-height: 70px; /* adjust to the size of logo */
     }
 
     li img {
@@ -304,6 +337,11 @@ footer {
 
     .welcome {
         width: 85%;
+        font-size: x-large;
+    }
+
+    .welcome h1 {
+        font-size: 50pt;
     }
 
 
@@ -329,9 +367,74 @@ footer {
         padding-right: 20%;
     }
 
+    /* grid layout with six columns and two rows, with grid items defined by their respective grid areas. Each grid area is assigned to a corresponding class item (item1 to item5) */
+    .item1 {
+        grid-area: a;
+    }
+
+    .item1 p {
+        padding: 10px;
+    }
+
+    .item1 .button {
+        width: 96%;
+    }
+
+    .item2 {
+        grid-area: b;
+    }
+
+    .item2 p {
+        padding: 10px;
+    }
+
+    .item2 .button {
+        width: 96%;
+    }
+
+    .item3 {
+        grid-area: c;
+    }
+
+    .item3 p {
+        padding: 10px;
+    }
+
+    .item3 .button {
+        width: 94%;
+    }
+
+    .item4 {
+        grid-area: d;
+    }
+
+    .item4 p {
+        padding: 10px;
+    }
+
+    .item4 .button {
+        width: 94%;
+    }
+
+    .item5 {
+        grid-area: e;
+    }
+
+    .item5 p {
+        padding: 10px;
+    }
+
+    .item5 .button {
+        width: 94%;
+    }
+
     .grid {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'a a a b b b'
+            'c c d d e e';
         grid-gap: 10px;
     }
 
