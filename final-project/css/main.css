@@ -338,12 +338,16 @@ footer {
     .welcome {
         width: 85%;
         font-size: x-large;
+        object-fit: cover;
+    }
+
+    .container .welcome-img {
+        height: 600px;
     }
 
     .welcome h1 {
         font-size: 50pt;
     }
-
 
     /* set the flex container to have a row direction and centers its children horizontally using the justify-content property. */
     .about {
