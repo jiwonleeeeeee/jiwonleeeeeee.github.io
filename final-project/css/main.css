@@ -22,6 +22,7 @@ ul li {
     text-align: center;
     color: #c78c06;
     padding: 15px;
+    padding-left: 0;
 }
 
 a:link {
@@ -45,9 +46,28 @@ li img {
     margin-right: 1000px;
 }
 
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
 input[type="search"] {
-    width: 95%;
-    height: 40px;
+    width: 100%;
+    height: 35px;
+}
+
+.searchbutton {
+    border: none;
+    background: none;
+    padding-left: 0;
+    font-size: x-large;
+}
+
+.fa-magnifying-glass {
+    color: #c78c06;
+    background-color: #222;
+    border: 1px solid #c78c06;
 }
 
 .container {
@@ -61,26 +81,30 @@ input[type="search"] {
 .welcome {
     position: absolute;
     color: white;
-    bottom: 90px;
+    top: 50%;
+    left: 50%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px;
-    font-size: x-large;
+    padding: 25px 10px;
+    font-size: xx-small;
+    transform: translate(-50%, -50%);
+    width: 97%;
 }
 
 .title {
-    font-size: 110px;
+    font-size: 50px;
 }
 
 .yellowbutton {
     background: #c78c06;
     border: none;
-    padding: 40px 35px;
-    font-size: larger;
+    padding: 20px 15px;
+    font-size: large;
 }
 
 h2 {
     font-size: 80px;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
 
 h3 {
@@ -97,6 +121,8 @@ section p {
 .about {
     background: #ffe6ac;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about img {
@@ -112,31 +138,13 @@ section p {
     font-size: large;
 }
 
-.digital {
+.grid-item {
     background: #ffe6ac;
     margin-bottom: 10px;
 }
 
-
-
-.marketing {
-    background: #ffe6ac;
-    margin-bottom: 10px;
-}
-
-.video {
-    background: #ffe6ac;
-    margin-bottom: 10px;
-}
-
-.webdev {
-    background: #ffe6ac;
-    margin-bottom: 10px;
-}
-
-.print {
-    background: #ffe6ac;
-    margin-bottom: 10px;
+.grid-item p {
+    margin-left: 10px;
 }
 
 .button {
@@ -158,6 +166,8 @@ section p {
     width: auto;
     color: white;
     padding: 10px;
+    margin-left: -5%;
+    margin-right: -5%;
 }
 
 .visiontext {
@@ -186,7 +196,7 @@ section p {
 }
 
 .team h3 {
-    margin: 10px 5px 0px;
+    margin: 10px 0 5px;
 }
 
 .team p {
@@ -195,14 +205,15 @@ section p {
 }
 
 .ceo {
-    font-weight: bold;
+    font-weight: 900;
     padding-bottom: 0px;
     margin: 0px 5px 0px;
 }
 
 hr {
+    margin-top: -5%;
     border-color: #c78c06;
-    width: 97%
+    width: 98%
 }
 
 form {
@@ -265,5 +276,74 @@ footer {
 
 /* styles for screens 760px wide and above (desktop ver.) */
 @media screen and (min-width: 760px) {
+
+    ul li {
+        display: inline;
+        align-items: center;
+        margin-bottom: 5%;
+        justify-content: space-evenly;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li img {
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    li:nth-child(1) {
+        background: none;
+    }
+
+    .welcome {
+        width: 85%;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: center
+    }
+
+    .about img {
+        width: 40%;
+        padding-left: 10%;
+    }
+
+    .abouttext h2 {
+        padding-left: 20px;
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .abouttext p {
+        padding-left: 20px;
+        padding-right: 20%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+    .team:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+      
+    .team img {
+        order: 2;
+      }
     
+    .
 }
