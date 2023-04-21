@@ -104,7 +104,7 @@ input[type="search"] {
 }
 
 h2 {
-    font-size: 80px;
+    font-size: 60px;
     margin-bottom: 0px;
     margin-top: 20px;
 }
@@ -178,7 +178,6 @@ section p {
     padding-left: 0;
 }
 
-
 .buttonblue {
     border: 1px solid #c78c06;
     color: white;
@@ -212,7 +211,7 @@ section p {
 }
 
 hr {
-    margin-top: -5%;
+    margin-top: -4%;
     border-color: #c78c06;
     width: 98%
 }
@@ -225,6 +224,7 @@ form {
 form input[type="text"] {
     height: 25px;
     width: 100%;
+    margin: 5px 0;
 }
 
 form input[type=text]:nth-child(11) {
@@ -446,8 +446,8 @@ footer {
     .team {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    }
+        margin-bottom: 0;
+        }
       
     .team:nth-child(2) {
         flex-direction: row-reverse;
@@ -477,5 +477,6 @@ footer {
     table {
         width: 100%;
         order: 3;
+        margin-top: 3%;
     }
 }
