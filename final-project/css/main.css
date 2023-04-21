@@ -25,6 +25,8 @@ ul li {
     padding-left: 0;
 }
 
+/*set the text decoration of hyperlinks to none,
+which means that links will not have an underline by default.*/
 a:link {
     text-decoration: none;
 }
@@ -304,6 +306,8 @@ footer {
         width: 85%;
     }
 
+
+    /* set the flex container to have a row direction and centers its children horizontally using the justify-content property. */
     .about {
         flex-direction: row;
         justify-content: center
@@ -331,19 +335,40 @@ footer {
         grid-gap: 10px;
     }
 
+    /* align a row of team members with equal space between them, and reverse the order of the second team member. */
     .team {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-      }
+    }
       
     .team:nth-child(2) {
         flex-direction: row-reverse;
-      }
+    }
       
     .team img {
         order: 2;
-      }
+    }
     
-    .
+    /* display the message and location side by side, with the table underneath them */
+    .flexcontact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .message {
+        width: 49%;
+        order: 1;
+        margin-right: 10px;
+    }
+      
+    .loc {
+        width: 49%;
+        order: 2;
+    }
+      
+    table {
+        width: 100%;
+        order: 3;
+    }
 }
