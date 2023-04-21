@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans';
 }
 
+/* wrapper to contains all the content */
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,37 +60,64 @@ input[type="search"] {
 
 .welcome {
     position: absolute;
-    bottom: 500px;
     color: white;
-    background-color: #222;
+    bottom: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 10px;
+    font-size: x-large;
+}
+
+.title {
+    font-size: 110px;
 }
 
 .yellowbutton {
     background: #c78c06;
     border: none;
-    padding: 20px 15px;
+    padding: 40px 35px;
+    font-size: larger;
 }
 
-#about {
-    background: #ffe6ac;
+h2 {
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    padding: 0px 10px;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+section p {
+    padding: 10px;
+    margin-bottom: 0;
 }
 
 .about {
-    padding: 10px;
+    background: #ffe6ac;
+    padding: 20px;
 }
 
 .about img {
     width: 100%;
 }
 
-#services img {
+.services img {
     width: 100%
+}
+
+.button {
+    margin: 0px 10px 10px;
+    font-size: large;
 }
 
 .digital {
     background: #ffe6ac;
     margin-bottom: 10px;
 }
+
+
 
 .marketing {
     background: #ffe6ac;
@@ -123,11 +151,119 @@ input[type="search"] {
 }
 
 .vision {
-    position: relative;
+    background-image: url('../images/vision.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    width: auto;
+    color: white;
+    padding: 10px;
 }
 
 .visiontext {
-    position: absolute;
-    bottom: 300px;
+    padding-top: 3%;
+}
+
+.visiontext h3 {
+    padding-left: 0;
+}
+
+
+.buttonblue {
+    border: 1px solid #c78c06;
     color: white;
+    background: linear-gradient(to right, black, darkblue);
+    padding: 20px;
+}
+
+.team {
+    background: #ffe6ac;
+    margin-bottom: 20px;
+}
+
+.team img {
+    width: 100%
+}
+
+.team h3 {
+    margin: 10px 5px 0px;
+}
+
+.team p {
+    margin-left: 10px;
+    padding-bottom: 30px;
+}
+
+.ceo {
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin: 0px 5px 0px;
+}
+
+hr {
+    border-color: #c78c06;
+    width: 97%
+}
+
+form {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form input[type="text"] {
+    height: 25px;
+    width: 100%;
+}
+
+form input[type=text]:nth-child(11) {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    border: none;
+    background-color: #222;
+    color: #c78c06;
+    font-size: 15pt;
+    margin: 20px 0px;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 15px;
+}
+
+tr th {
+    background-color: #ffe6ac;
+}
+
+caption {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    width: 100%;
+    padding: 30px 20px 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styles for screens 760px wide and above (desktop ver.) */
+@media screen and (min-width: 760px) {
+    
 }
